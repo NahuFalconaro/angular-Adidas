@@ -1,0 +1,33 @@
+<h1>Lista de productos</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Image</th>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Price</th>
+            <th>Stock</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><img [src]="product.image" [alt]="product.name"/></td><!--O puede ser src="{{product.image}}" alt="[[product.name]]"-->
+            <td>{{product.name}}</td>
+            <td>{{product.type}}</td>
+            <td>{{product.price}}</td>
+            <td>{{product.stock}}</td>
+        </tr>
+        <tr>
+            <td>Short</td>
+            <td>Indumentaria</td>
+            <td>3000</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>Zapatillas Air-Force</td>
+            <td>Calzado</td>
+            <td>8000</td>
+            <td>15</td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,30 @@
+@media (min-width: 1024px)  {
+    .Products{
+        display: inline-flex;
+        margin: 5px;
+    }
+    .myCard{
+            margin-right: 20px;
+        }
+        .logo{
+            width: 100px;
+            height: 100px; 
+            margin-right: 550px;  
+        }
+}
+@media screen and (max-width: 600px) {
+        .myCard{
+                margin-right: 20px;
+        }
+        .logo{
+            width: 80px;
+            height: 80px;
+        }
+        .btn{
+            margin-top: 5px !important;
+            margin-left: 5px !important;
+        }
+}
+.footer{
+    background-color: #f8f9fa;
+}

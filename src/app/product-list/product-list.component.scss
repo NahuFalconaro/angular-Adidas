@@ -1,0 +1,35 @@
+@media (min-width: 1024px)  {
+    .Products{
+        display: inline-flex;
+        margin: 5px;
+    }
+    .myCard{
+            margin-right: 20px;
+        }
+    }
+    @media screen and (max-width: 600px) {
+
+        .Products{
+            
+            margin: 5px;
+        }
+        .myCard{
+                margin-right: 20px;
+            }
+    
+    }
+.logo{
+        width: 20%;
+        height: 40%;
+}
+.clearance{
+    border: 2px solid rgb(13, 124, 13);
+    background-color: lightgreen;
+}
+    
+h1 {
+    color : grey;
+    text-align: center;
+    margin-top: 40px;//probar con otro estilo luego
+}
+

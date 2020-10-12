@@ -9,13 +9,10 @@
         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Products</a>
+        <a class="nav-link" href="#product">Products</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Contact</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">About</a>
       </li>
     </ul>
   </div>
@@ -23,14 +20,28 @@
 <div>
     <div class="container">
       <div class="row">
-        <div class="col-8">
+        <div class="col-8" id="product">
           <app-product-list>
 
           </app-product-list>
         </div><!--siempre son 12 columnas, aca usa 8 y 4, en la misma caja-->
-        <div class="col-4">Carrito compras</div>
+        <div class="col-4">BOX</div>
       </div>
     </div>
+</div>
+<div>
+  <div class="container">
+    <div class="row">
+      <div class="6">
+        <!--<app-about>
+          about
+          hacer componente de about
+        </app-about>
+        -->
+      </div>
+      <div class="6"></div>
+    </div>
+  </div>
 </div>
 <footer>
   CopyRight@2020 - {{title}}

@@ -11,6 +11,9 @@
             height: 100px; 
             margin-right: 550px;  
         }
+        .icons{
+            float: right;
+        }
 }
 @media screen and (max-width: 600px) {
         .myCard{
@@ -38,9 +41,7 @@ input{
     font-size:medium;
     margin: 5px;
 }
-.icons{
-    float: right;
-}
+
 .__icon{
     margin: 0 10px ;
 }

@@ -1,0 +1,5 @@
+<button class="btn btn-dark btn-sm" (click)="downQuantity()">-</button>
+<input type="text" [(ngModel)]="quantity" (keyup)="onChangeQuantity($event)">       
+<button class="btn btn-dark btn-sm" (click)="upQuantity()">+</button>
+<!--Es un componente mas reutilizable ya que le sacamos todas las referencias a producto y ahora solo es quantity y recibe quantity, osea 
+trabaja con integer-->

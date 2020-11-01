@@ -1,0 +1,15 @@
+@media (min-width: 1024px)  {
+    h1 {
+        color : grey;
+        text-align: center;
+        margin-top: 40px;//probar con otro estilo luego
+    }
+}
+    @media screen and (max-width: 600px) {
+        h1 {
+            color : grey;
+            text-align: center;
+            margin-top: 20px;//probar con otro estilo luego
+        }
+    
+    }

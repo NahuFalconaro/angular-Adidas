@@ -1,0 +1,6 @@
+<h1>Carrito de compras</h1>
+<ul>
+    <li *ngFor="let product of cartList$ | async"><!-- |  <-- es un piper, lo que viene desps son pipers, hay muchos son utilizables-->
+        {{product.name}}: {{product.quantity}}
+    </li>
+</ul>

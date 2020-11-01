@@ -5,14 +5,25 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProductListComponent } from './product-list/product-list.component';
 
+import {FormsModule} from '@angular/forms';
+import { StoreAboutComponent } from './store-about/store-about.component';
+import { StoreCartComponent } from './store-cart/store-cart.component';
+import { StoreHomeComponent } from './store-home/store-home.component';
+import { InputNumberComponent } from './input-number/input-number.component'
+
 @NgModule({
   declarations: [
     AppComponent,
-    ProductListComponent
+    ProductListComponent,
+    StoreAboutComponent,
+    StoreCartComponent,
+    StoreHomeComponent,
+    InputNumberComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

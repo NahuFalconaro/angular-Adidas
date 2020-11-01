@@ -1,5 +1,5 @@
 <h1>Lista de productos</h1>
-<table class="table table-responsive">
+<table class="table table-responsive text-center"><!--text-center alinea los textos de la tabla en este caso, es bootstrap-->
     <thead class="thead-dark">
         <tr>
             <th>Image</th>
@@ -7,15 +7,19 @@
             <th>Type</th>
             <th>Price</th>
             <th>Stock</th>
+            <th>Cant</th>
+            <th>Buy</th>
         </tr>
     </thead>
     <tbody>
         <tr *ngFor="let product of products" [ngClass]="{'clearance': product.clearance}">
-            <td><img [src]="product.image" [alt]="product.name"/></td> <!-- O puede ser src="{{product.image}}" alt="[[product.name]]"--> 
+            <td><img width="100" class="img-thumbnail" [src]="product.image" [alt]="product.name"/></td> <!-- O puede ser src="{{product.image}}" alt="[[product.name]]"--> 
             <td>{{product.name}}</td>
             <td>{{product.type}}</td>
             <td>{{product.price | currency}}</td>
             <td><span *ngIf="product.stock==0" class="badge badge-danger">Sin Stock!</span><span *ngIf="product.stock!=0" class="badge badge-pill badge-success">Con Stock!</span></td>
+            <td><app-input-number (maxReached)="maxReached($event)" [(quantity)]="product.quantity" [max]="product.stock" *ngIf="product.stock"></app-input-number></td>
+            <td><button class="btn btn-dark"  *ngIf="product.stock!=0" (click)="addToCart(product)">AddCart</button></td>
         </tr>
     </tbody>
 </table> 

@@ -9,7 +9,8 @@ import {FormsModule} from '@angular/forms';
 import { StoreAboutComponent } from './store-about/store-about.component';
 import { StoreCartComponent } from './store-cart/store-cart.component';
 import { StoreHomeComponent } from './store-home/store-home.component';
-import { InputNumberComponent } from './input-number/input-number.component'
+import { InputNumberComponent } from './input-number/input-number.component';
+import { StoreCheckinComponent } from './store-checkin/store-checkin.component'
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { InputNumberComponent } from './input-number/input-number.component'
     StoreAboutComponent,
     StoreCartComponent,
     StoreHomeComponent,
-    InputNumberComponent
+    InputNumberComponent,
+    StoreCheckinComponent
   ],
   imports: [
     BrowserModule,

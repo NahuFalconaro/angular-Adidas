@@ -28,10 +28,23 @@
 .footer{
     background-color: #f8f9fa;
     text-align: center;
-    position: absolute;
+    
 }
 input{
     max-width: 200px;
     vertical-align: middle;
+}
+.__nav{
+    font-size:medium;
+    margin: 5px;
+}
+.icons{
+    float: right;
+}
+.__icon{
+    margin: 0 10px ;
+}
+.__icon:hover{
+    color: darkblue;
 }
 

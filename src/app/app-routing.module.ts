@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { StoreAboutComponent } from './store-about/store-about.component';
+import { StoreCheckinComponent } from './store-checkin/store-checkin.component';
 import { StoreHomeComponent } from './store-home/store-home.component';//agrega automaticamente lois imports de los componenetes
 
 const routes: Routes = [//aca es donde se declaran las rutas, este es el ruteo
@@ -16,6 +17,10 @@ const routes: Routes = [//aca es donde se declaran las rutas, este es el ruteo
   {   
     path: 'about',
     component:  StoreAboutComponent
+  }, 
+  {   
+    path: 'checking',
+    component:  StoreCheckinComponent
   },
 ];
 

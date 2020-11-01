@@ -1,5 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <img class="logo" src="../assets/img/LogoAdidas2.png">
+  <div>
+    <img class="logo" src="../assets/img/LogoAdidas2.png">
+  </div>
   <a class="navbar-brand" [routerLink]="['/']">{{title}}</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -7,10 +9,13 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" [routerLink]="['/products']">Products</a>
+        <a class="nav-link __nav" [routerLink]="['/products']">Products</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" [routerLink]="['/about']">Contact</a>
+        <a class="nav-link __nav" [routerLink]="['/about']">Nosotros</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link __nav" [routerLink]="['/checking']">Checking</a>
       </li>
     </ul>
     <form>
@@ -37,9 +42,14 @@
 </div>
 <div>
 
-<footer class="footer">
-  <small>All Rights Reserved &copy; {{title}}</small>
-  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae ipsum quas consectetur natus distinctio? Voluptatem possimus doloremque cum at distinctio quas deleniti magnam hic, nesciunt minima odio sit laboriosam nam.</p>
-  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae ipsum quas consectetur natus distinctio? Voluptatem possimus doloremque cum at distinctio quas deleniti magnam hic, nesciunt minima odio sit laboriosam nam.</p>
-  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae ipsum quas consectetur natus distinctio? Voluptatem possimus doloremque cum at distinctio quas deleniti magnam hic, nesciunt minima odio sit laboriosam nam.</p>
+<footer class="footer fixed-bottom">
+  <small>All Rights Reserved &copy; {{title}} by NahuelFalconaro</small>
+  <div class="icons">
+    <a target='_blank' href="https://web.whatsapp.com/"><i class="fa fa-whatsapp __icon" aria-hidden="true"></i></a><!--target="_blank es para que abra el href en otra pestaña-->
+    <a target='_blank' href="https://www.instagram.com/adidasar/"><i class="fa fa-instagram __icon" aria-hidden="true"></i></a>
+    <a target='_blank' href="https://www.facebook.com/adidasAR/"><i class="fa fa-facebook __icon" aria-hidden="true"></i></a>
+    <a target='_blank' href="https://www.youtube.com/adidas"><i class="fa fa-youtube __icon" aria-hidden="true"></i></a>
+  </div>
+  <div></div>
 </footer>
+<!--https://api.whatsapp.com/send?phone=542281518296 esto hace que envie wpp a determinado numero.-->
